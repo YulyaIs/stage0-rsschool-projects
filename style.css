@@ -847,3 +847,183 @@ label {
 
 /* librarycard */
 
+.container-librarycard {
+    width: 1440px;
+    height: 614px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#box6 {
+    width: 372px;
+    height: 61px;
+    background-color: white;
+    left: 600px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 550px;
+}
+
+.title7 {
+    text-align: center;
+    font-family: forum;
+    color: #0C0C0E;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 10px;
+    width: 372px;
+    height: 40px;
+}
+
+.line5 {
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    margin-left: 157px;
+    margin-top: 20px;
+}
+
+.wrapper-librarycard {
+    width: 1400px;
+    height: 453px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.find-card {
+    width: 600px;
+    height: 453px;
+}
+
+.title-card1 {
+    width: 324px;
+    height: 36px;
+    font-family: inter;
+    font-size: 27px;
+    letter-spacing: 2px;
+    margin-left: 150px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    margin-top: 0px;
+    padding-top: 0px;
+
+}
+
+.box-card {
+    width: 600px;
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 2px solid #bb945f;
+    margin-left: 20px;
+}
+
+.gold-card {
+    width: 560px;
+    height: 272px;
+    background-color: #bb945f;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.text-card2 {
+    width: 294px;
+    height: 50px;
+    font-family: forun;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.input1 {
+    width: 500px;
+    height: 66px;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 13px;
+    color: #8E8E8E;
+    font-family: Forum;
+    font-size: 30px;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+
+.input2 {
+    width: 500px;
+    height: 66px;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 25px;
+    color: #8E8E8E;
+    font-family: Forum;
+    font-size: 30px;
+    padding-left: 10px;
+
+}
+
+.button-card3 {
+    width: 242px;
+    height: 44px;
+    margin-left: 163px;
+    cursor: pointer;
+    text-align: center;
+    color: #0C0C0E;
+    font-family: Inter;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background-color: white;
+}
+
+
+
+.get-a-card {
+    width: 456px;
+    height: 253px;
+}
+
+.title-card {
+    width: 220px;
+    height: 30px;
+    font-family: forum;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    text-align: right;
+    margin-left: 235px;
+}
+
+.text-card {
+    width: 456px;
+    height: 120px;
+    font-family: inter;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: right;
+}
+
+.button-card {
+    width: 75px;
+    height: 30px;
+    margin-left: 280px;
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+}
+
+.button-card1 {
+    width: 75px;
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+}
+
