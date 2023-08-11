@@ -719,3 +719,131 @@ label {
     margin-right: 7px;
 
 }
+
+/* contacts*/
+
+.container_contacts {
+    width: 1440px;
+    height: 545px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#box5 {
+    width: 240px;
+    height: 61px;
+    background-color: white;
+    left: 600px;
+    margin-top: 0px;
+    position: absolute;
+    text-align: center;
+}
+
+.title6 {
+    text-align: center;
+    font-family: forum;
+    color: #0C0C0E;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 10px;
+    width: 220px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.line4 {
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    margin-left: 87px;
+    margin-top: 10px;
+}
+
+.wrapper_contacts {
+    width: 1400px;
+    height: 414px;
+    margin-left: 20px;
+    margin-top: 110px;
+    display: flex;
+}
+
+.text-info {
+    width: 503px;
+    height: 380px;
+
+}
+
+.title-info {
+    width: 282px;
+    height: 40px;
+    font-family: inter;
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.phone-info {
+    width: 503px;
+    height: 160px;
+}
+
+.text-phone {
+    width: 306px;
+    height: 40px;
+    font-family: inter;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.text-phone1 {
+    width: 503px;
+    height: 40px;
+    font-family: inter;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.text-phone2 {
+    width: 393px;
+    height: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: inter;
+}
+
+.senior-staff {
+    width: 351px;
+    height: 100px;
+}
+
+.name-staff {
+    width: 138px;
+    height: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: inter;
+}
+
+.name-staff1 {
+    width: 351px;
+    height: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: inter;
+}
+
+.map {
+    width: 696px;
+    height: 414px;
+    background: url(./assets/map.jpg);
+    margin-left: 200px;
+}
+
+/* librarycard */
+
