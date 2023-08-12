@@ -1,15 +1,19 @@
 html, body{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    max-width: 1440px;
 }
 
+
+
 .wrapper {
-    max-width: ;width: 1440px;
+    max-width: 1440px;
     height: 90px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .list {
@@ -17,6 +21,7 @@ html, body{
     flex-wrap: wrap;
     margin-right: 0px;
     padding-right: 0px;
+    
     
 }
 
@@ -103,6 +108,7 @@ html, body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
 }
 
 #box1 {
@@ -191,6 +197,7 @@ html, body{
     background-color: white;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 #box2 {
@@ -621,6 +628,7 @@ label {
     padding-left: 0;
     display: flex;
     flex-direction: column;
+
 }
 
 .list2 {
@@ -828,6 +836,7 @@ label {
     font-size: 20px;
     letter-spacing: 2px;
     font-family: inter;
+    font-weight: 700;
 }
 
 .name-staff1 {
@@ -836,6 +845,12 @@ label {
     font-size: 20px;
     letter-spacing: 2px;
     font-family: inter;
+
+}
+
+#link {
+    color: #000;
+    text-decoration: none;
 }
 
 .map {
@@ -876,7 +891,7 @@ label {
     height: 40px;
 }
 
-.line5 {
+.line6 {
     width: 50px;
     height: 1px;
     background-color: black;
@@ -1027,3 +1042,136 @@ label {
     background-color: white;
 }
 
+/* footer*/
+
+.container-footer {
+    width: 1440px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000;
+
+}
+
+.wrapper-frame {
+    width: 1400px;
+    height: 90px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.box-frame1 {
+    width: 1400px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.adress-frame1 {
+    width: 229px;
+    height: 40px;
+    font-family: Inter;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+}
+
+#link1 {
+    color: white;
+    text-decoration: none;
+}
+
+.mon-fri {
+    width: 149px;
+    height: 40px;
+    text-align: right;
+    font-family: Inter;
+    font-size: 15px;
+    color: white;
+    text-align: right;
+
+}
+
+
+.box-frame2 {
+    width: 1400px;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.box-icon {
+    width: 102px;
+    height: 24px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.icon-frame2 {
+    width: 24px;
+    height: 24px;
+}
+
+
+.line7 {
+    width: 1400px;
+    height: 1px;
+    background: #000;
+    margin-left: 20px;
+}
+
+.box-frame3 {
+    width: 1400px;
+    height: 22px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.data-frame3 {
+    width: 56px;
+    height: 20px;
+    letter-spacing: 2px;
+    font-family: inter;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+.rsschool {
+    width: 300px;
+    height: 22px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#link2 {
+    text-decoration: none;
+    color: white;
+}
+
+.username {
+    width: 113px;
+    height: 22px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
