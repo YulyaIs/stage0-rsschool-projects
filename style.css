@@ -848,7 +848,7 @@ label {
 
 }
 
-#link {
+.link {
     color: #000;
     text-decoration: none;
 }
@@ -1161,7 +1161,7 @@ label {
     letter-spacing: 2px;
 }
 
-#link2 {
+.link2 {
     text-decoration: none;
     color: white;
 }
