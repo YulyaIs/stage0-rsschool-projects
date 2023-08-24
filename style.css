@@ -109,6 +109,7 @@ html, body{
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
+    overflow: hidden;
 }
 
 #box1 {
@@ -149,44 +150,62 @@ html, body{
 
 }
 
-.images {
-    display: flex;
-    width: 1400px;
+.slider {
+    width: 1440px;
     height: 560px;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-top: 20px;
+    position: relative;
+    margin-left: 15px;
+
 }
 
-.circle-box {
+.slider-images {
+   width: 450px;
+   height: 560px;
+
+
+}
+
+.slider-line {
     display: flex;
+    transition: all 1s;
+    position: relative;
+    justify-content: space-between;
+
+}
+
+.slider-img {
+    width: 450px;
+    height: 560px;
+    margin-right: 25px;
+
+}
+
+.slider-buttons {
     width: 68px;
     height: 16px;
-    margin-left: 670px;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
     justify-content: space-between;
-    margin-top: 20px;
-
 }
 
-.circle1 {
+.slider-button1 {
     width: 16px;
     height: 16px;
     border-radius: 50%;
+    background-color: black;
+
+}
+
+.slider-button1:hover {
     background-color: #bb945f;
+    cursor: pointer;
 }
 
-.circle2 {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #0c0c0e;
-}
-
-.circle3 {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #0c0c0e;
+.active {
+    background-color: #bb945f;
 }
 
 /* favorites */
@@ -198,6 +217,7 @@ html, body{
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    overflow: hidden;
 }
 
 #box2 {
@@ -538,6 +558,643 @@ label {
     cursor: pointer;
     color: #bb945f;
     margin-top: 80px;
+}
+
+/* containers */
+
+.items-container1 {
+    width: 1400px;
+    height: 1150px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.subject-spring-book1 {
+    width: 150px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-spring-book1 {
+    width: 355px;
+    height: 160px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+#img-spring-book1 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/springbook1.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.buy-button-spring1 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 160px;
+
+}
+
+.subject-spring-book2 {
+    width: 457px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-spring-book2 {
+    width: 355px;
+    height: 200px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.buy-button-spring2 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 120px;
+
+}
+
+#img-spring-book2 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/springbook2.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.subject-spring-book3 {
+    width: 209px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-spring-book3 {
+    width: 355px;
+    height: 200px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.buy-button-spring3 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 120px;
+
+}
+
+#img-spring-book3 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/springbook3.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.subject-spring-book4 {
+    width: 129px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-spring-book4 {
+    width: 355px;
+    height: 280px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.own-button-spring {
+    width: 75px;
+    height: 30px;
+    border: 2px solid #bb945f;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #bb945f;
+    margin-top: 40px;
+}
+
+#img-spring-book4 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/springbook4.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.items-container2 {
+    width: 1400px;
+    height: 1150px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.subject-summer-book1 {
+    width: 380px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+    white-space: nowrap;
+
+}
+
+.text-summer-book1 {
+    width: 355px;
+    height: 240px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.buy-button-summer1 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 90px;
+
+}
+
+#img-summer-book1 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/summerbook1.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.subject-summer-book2 {
+    width: 260px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-summer-book2 {
+    width: 355px;
+    height: 320px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.buy-button-summer2 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+#img-summer-book2 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/summerbook2.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.subject-summer-book3 {
+    width: 291px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-summer-book3 {
+    width: 355px;
+    height: 200px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.buy-button-summer3 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 130px;
+
+}
+
+#img-summer-book3 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/summerbook3.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.subject-summer-book4 {
+    width: 254px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+    white-space: nowrap;
+
+}
+
+.text-summer-book4 {
+    width: 355px;
+    height: 320px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.buy-button-summer4 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+#img-summer-book4 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/summerbook4.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.items-container3 {
+    width: 1400px;
+    height: 1150px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.subject-autumn-book1 {
+    width: 223px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-autumn-book1 {
+    width: 355px;
+    height: 280px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+}
+
+.buy-button-autumn1 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 50px;
+
+}
+
+#img-autumn-book1 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/autumnbook1.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+
+.subject-autumn-book2 {
+    width: 146px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+    white-space: nowrap;
+
+}
+
+.text-autumn-book2 {
+    width: 355px;
+    height: 280px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+}
+
+.buy-button-autumn2 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 50px;
+
+}
+
+#img-autumn-book2 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/autumnbook2.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+
+.subject-autumn-book3 {
+    width: 280px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+    white-space: nowrap;
+
+}
+
+.text-autumn-book3 {
+    width: 355px;
+    height: 280px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+}
+
+.buy-button-autumn3 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 40px;
+
+}
+
+#img-autumn-book3 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/autumnbook3.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+
+.subject-autumn-book4 {
+    width: 249px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-autumn-book4 {
+    width: 355px;
+    height: 240px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+}
+
+.buy-button-autumn4 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 80px;
+
+}
+
+#img-autumn-book4 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/autumnbook4.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
 }
 
 /* coffe shop */

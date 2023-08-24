@@ -1,9 +1,47 @@
-console.log ("Самооценка 60/ 100 ");
-console.log ("1. Прошла проверку валидатором +10");
-console.log ("2. Слишком много button, input и стиль в заголовках хромает +8 ");
-console.log ("3. Кнопки не меняют цвет, между элементами неправильное расстояние +32") ;
-console.log ("4. Стили не меняются, нет фавикона +10");
+const slider = document.querySelector('.slider');
+const sliderLine = document.querySelector('.slider-line');
+const sliderButtons = document.querySelectorAll('.slider-button1');
+const sliderImg = document.querySelectorAll('.slider-img');
+
+let sliderIndex = 0;
+let sliderWidth = slider.offsetWidth;
+
+function nextSlide () {
+    sliderIndex++;
+    if (sliderIndex >= sliderImg.length) {
+        sliderIndex = 0;
+    } 
+
+    rollSlider();
+    thisSlide(sliderIndex);
+}
+
+function prevSlider() {
+    sliderIndex--;
+    if (sliderIndex < 0) {
+        sliderIndex = sliderImg.length -1;
+    } 
 
 
+    rollSlider();
+    thisSlide(sliderIndex);
 
+}
+
+function rollSlider() {
+    sliderLine.style.transform = `translateX(${-sliderIndex * sliderWidth}px)`;
+}
+
+function thisSlide(index) {
+     sliderButtons.forEach(item => item.classList.remove('active'));
+    sliderButtons[index].classList.add('active');
+}
+
+sliderButtons.forEach((button, index) => {
+     button.addEventListener('click', () => {
+         sliderIndex = index;
+         rollSlider();
+         thisSlide(sliderIndex);
+     })
+ })
 
