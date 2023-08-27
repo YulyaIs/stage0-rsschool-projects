@@ -13,7 +13,7 @@ function nextSlide () {
     } 
 
     rollSlider();
-    thisSlide(sliderIndex);
+    thisSlider(sliderIndex);
 }
 
 function prevSlider() {
@@ -24,7 +24,7 @@ function prevSlider() {
 
 
     rollSlider();
-    thisSlide(sliderIndex);
+    thisSlider(sliderIndex);
 
 }
 
@@ -32,7 +32,7 @@ function rollSlider() {
     sliderLine.style.transform = `translateX(${-sliderIndex * sliderWidth}px)`;
 }
 
-function thisSlide(index) {
+function thisSlider(index) {
      sliderButtons.forEach(item => item.classList.remove('active'));
     sliderButtons[index].classList.add('active');
 }
@@ -41,7 +41,35 @@ sliderButtons.forEach((button, index) => {
      button.addEventListener('click', () => {
          sliderIndex = index;
          rollSlider();
-         thisSlide(sliderIndex);
+         thisSlider(sliderIndex);
      })
  })
+
+// tab
+
+const itemstab = document.querySelectorAll('.items-tab');
+const buttontab = document.querySelectorAll('.tabbutton');
+let tabname;
+
+
+buttontab.forEach(item => {
+    item.addEventListener('click', selectbuttontab)
+});
+
+function selectbuttontab() {
+    buttontab.forEach(item => {
+        item.classList.remove('active');
+    });
+
+    this.classList.add('active');
+    tabname = this.getAttribute('data-tab');
+    selectitemstab(tabname);
+
+    function selectitemstab(tabname) {
+        itemstab.forEach(item => {
+            item.classList.contains(tabname)? item.classList.add('active') : item.classList.remove('active');
+        });        
+        
+    }
+};
 

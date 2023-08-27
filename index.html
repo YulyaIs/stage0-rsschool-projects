@@ -50,8 +50,7 @@
                        </div>
                        <div class="slider">
                        <div class="slider-images">
-                        <div class="slider-line">
-                            
+                        <div class="slider-line">    
                             <img class="slider-img" src="./assets/image1.jpg" alt="img">
                             <img class="slider-img" src="./assets/image2.jpg" alt="img">
                             <img class="slider-img" src="./assets/image3.jpg" alt="img">
@@ -71,7 +70,6 @@
                         <div class="slider-button1"></div>
                        </div>
                     </div>                      
-                    </div>
            </section>
            <!--favorites-->
            <section class="container_favorites">
@@ -84,34 +82,35 @@
             <div class="text3">
                 <p>Pick favorites of season</p>
             </div>
-            <div class="seasons-wrapper">   
-            <div id="winter-box">
+            <div class="seasons-wrapper-tab">  
+            <div id="winter-box" class="tabbutton active" data-tab="tab1">
                 <label>
                     <input type="radio" name="Seasons" value="Winter" checked class="real-radio">
                     <span class="custom-radio"></span>
                     Winter
                 </label>
-            </div>
-            <div id="spring-box">
-                <label><input type="radio" name="Seasons" value="Spring" class="real-radio">
+        </div>
+            <div id="spring-box" class="tabbutton" data-tab="tab2">
+                <label>
+                    <input type="radio" name="Seasons" value="Spring" class="real-radio">
                     <span class="custom-radio"></span>
                     Spring
                 </label>
             </div>
-            <div id="summer-box">
+            <div id="summer-box" class="tabbutton" data-tab="tab3">
                 <label><input type="radio" name="Seasons" value="Summer" class="real-radio">
                     <span class="custom-radio"></span>
                     Summer
                 </label>
             </div>
-            <div id="autumn-box">
+            <div id="autumn-box" class="tabbutton" data-tab="tab4">
                 <label><input type="radio" name="Seasons" value="Autumn" class="real-radio">
                     <span class="custom-radio"></span>
                     Autumn
                 </label>
-             </div>
+             </div>               
         </div>
-        <div class="items-container">
+        <div class="items-tab active tab1">
             <div class="wrapper-first-book">
                 <div class="box-first-book">
                     <div class="title-first-book">
@@ -150,26 +149,28 @@
                     <div id="img-second-book"></div>     
                 </div>
                 </div>
-                 <!--next book-->
-                 <div class="wrapper-first-book">
-                <div class="box-first-book">
-                    <div class="title-first-book">
-                        <h3>Staff Picks</h3>
+                <!--next book-->
+                <div class="wrapper-first-book">
+                    <div class="box-first-book">
+                        <div class="title-first-book">
+                            <h3>Staff Picks</h3>
+                        </div>
+                        <div class="line3"></div>
+                        <div class="subject-third-book">
+                            <h3>DANTE: POET OF THE SECULAR WORLD <br>
+                                By Erich Auerbach</h3>
+                        </div>
+                        <div class="text-third-book">
+                            <p>Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in
+                                general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into
+                                something of divine significance—an inspired introduction to Dante's main themes.</p>
+                        </div>
+                        <div class="button-first-book">
+                            <button class="buy-button">Buy</button>
+                        </div>
+                        <div id="img-third-book"></div>
                     </div>
-                    <div class="line3"></div>
-                    <div class="subject-third-book">
-                        <h3>DANTE: POET OF THE SECULAR WORLD <br>
-                            By Erich Auerbach</h3>
-                    </div>
-                    <div class="text-third-book">
-                        <p>Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
-                    </div>
-                    <div class="button-first-book">
-                        <button class="buy-button">Buy</button>
-                    </div>
-                    <div id="img-third-book"></div>     
                 </div>
-                 </div>
                  <!-- next book-->
                  <div class="wrapper-first-book">
                 <div class="box-first-book">
@@ -185,13 +186,14 @@
                         <p>A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
                     </div>
                     <div class="button-first-book">
-                        <button class="own-button">Own</button>
+                        <button class="buy-button-winter">Buy</button>
                     </div>
                     <div id="img-fourth-book"></div>     
                 </div>
-                 </div>   
+                 </div> 
+        </div>  
                  <!--next container--> 
-                 <div class="items-container1">
+                 <div class="items-tab tab2">
                     <div class="wrapper-first-book">
                         <div class="box-first-book">
                             <div class="title-first-book">
@@ -266,16 +268,17 @@
                                 <p>A fascinating story of a teenage girl<br> who marries a man twice her age with <br>the promise to bring her to America.<br> Her marriage is an opportunity for her<br> family to eventually immigrate. For<br> fans of Isabel Allende and Julia<br> Alvarez.</p>
                             </div>
                             <div class="button-first-book">
-                                <button class="own-button-spring">Own</button>
+                                <button class="buy-button-spring">Buy</button>
                             </div>
                             <div id="img-spring-book4"></div>     
-                        </div>
-                         </div>  
-                         <!--next container--> 
-                         <div class="items-container2">
-                            <div class="wrapper-first-book">
-                                <div class="box-first-book">
-                                    <div class="title-first-book">
+                    </div>
+             </div>  
+                 </div>
+             <!--next container--> 
+                <div class="items-tab tab3">
+                    <div class="wrapper-first-book">
+                        <div class="box-first-book">
+                            <div class="title-first-book">
                                         <h3>Staff Picks</h3>
                                     </div>
                                     <div class="line3"></div>
@@ -351,8 +354,9 @@
                                     <div id="img-summer-book4"></div>     
                                 </div>
                                  </div>  
-                                 <!--next container--> 
-                                 <div class="items-container3">
+                </div>
+                                <!--next container--> 
+                                 <div class="items-tab tab4">
                                     <div class="wrapper-first-book">
                                         <div class="box-first-book">
                                             <div class="title-first-book">
@@ -363,8 +367,7 @@
                                                 <h3>CASUAL CONVERSATION<br>
                                                     By Renia White</h3>
                                             </div>
-                                            <div class="text-autumn-book1">
-                                                <p>White's impressive debut collection<br> takes readers through and beyond<br> the concepts of conversation and the<br> casual - both what we say to each<br> other and what we don't, examining<br> the possibilities around how we<br> construct and communicate identity. </p>
+                                            <div class="text-autumn-book1">                                                <p>White's impressive debut collection<br> takes readers through and beyond<br> the concepts of conversation and the<br> casual - both what we say to each<br> other and what we don't, examining<br> the possibilities around how we<br> construct and communicate identity. </p>
                                             </div>
                                             <div class="button-first-book">
                                                 <button class="buy-button-autumn1">Buy</button>
@@ -431,8 +434,8 @@
                                             </div>
                                             <div id="img-autumn-book4"></div>     
                                         </div>
-                 </div>  
-        </div>
+                                         </div>
+                                    </div>  
            </section>
            <!-- coffee shop-->
            <section class="container_coffeeshop">

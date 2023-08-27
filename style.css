@@ -217,7 +217,7 @@ html, body{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    overflow: hidden;
+
 }
 
 #box2 {
@@ -259,16 +259,16 @@ html, body{
 
 }
 
-.seasons-wrapper {
+.seasons-wrapper-tab {
     width: 700px;
     height: 24px;
     background-color: white;
-    margin-top: 230px;
-    position: absolute;
-    margin-left: 20px;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 20px;
 
 }
 
@@ -341,17 +341,36 @@ label {
     background-color: white;
 }
 
-.items-container {
+.items-tab {
     width: 1400px;
     height: 1150px;
     background-color: white;
-    margin-left: 20px;
-    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+    margin: auto;
+    display: none;
+
 }
+
+
+.items-tab.active {
+    display: flex;
+    animation-name: tab; 
+    animation-duration: 4s; 
+
+}
+
+@keyframes tab {
+    from {
+        opacity: 0.5;
+    }
+
+    to {opacity: 1;
+
+    }
+}
+
 
 .wrapper-first-book {
     width: 590px;
@@ -549,30 +568,18 @@ label {
 
 }
 
-.own-button {
+.buy-button-winter {
     width: 75px;
     height: 30px;
-    border: 2px solid #bb945f;
+    border: 2px solid black;
     margin-left: 20px;
     text-align: center;
     cursor: pointer;
-    color: #bb945f;
     margin-top: 80px;
+    background-color: white;
 }
 
 /* containers */
-
-.items-container1 {
-    width: 1400px;
-    height: 1150px;
-    background-color: white;
-    margin-left: 20px;
-    margin-top: 70px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
 
 .subject-spring-book1 {
     width: 150px;
@@ -749,15 +756,15 @@ label {
     letter-spacing: 2px;
 }
 
-.own-button-spring {
+.buy-button-spring {
     width: 75px;
     height: 30px;
-    border: 2px solid #bb945f;
+    border: 2px solid black;
     margin-left: 20px;
     text-align: center;
     cursor: pointer;
-    color: #bb945f;
     margin-top: 40px;
+    background-color: white;
 }
 
 #img-spring-book4 {
@@ -767,18 +774,6 @@ label {
     position: absolute;
     left: 390px;
     top: 257px;
-
-}
-
-.items-container2 {
-    width: 1400px;
-    height: 1150px;
-    background-color: white;
-    margin-left: 20px;
-    margin-top: 70px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 
 }
 
@@ -980,17 +975,6 @@ label {
 
 }
 
-.items-container3 {
-    width: 1400px;
-    height: 1150px;
-    background-color: white;
-    margin-left: 20px;
-    margin-top: 70px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
 
 .subject-autumn-book1 {
     width: 223px;
