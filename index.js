@@ -73,3 +73,47 @@ function selectbuttontab() {
     }
 };
 
+
+// profile
+
+  
+const icon = document.querySelector('.icon');
+const boxprofile = document.querySelector('.box-profile');
+
+const toggleboxprofile = () => {
+  boxprofile.classList.toggle('active');
+}
+
+icon.addEventListener('click', e => {
+  e.stopPropagation();
+
+  toggleboxprofile();
+});
+
+document.addEventListener('click', e => {
+
+  let target = e.target;
+  let its_boxprofile = target === boxprofile || boxprofile.contains(target);
+  let its_icon = target === icon;
+  let boxprofile_is_active = boxprofile.classList.contains('active');
+  
+  if (!its_boxprofile && !its_icon && boxprofile_is_active) {
+    toggleboxprofile();
+  }
+})
+
+
+
+
+
+//icon.addEventListener('click', () => {
+  //   boxprofile.classList.toggle('hidden');
+//})
+
+//window.addEventListener('click', (event) => {
+  //if(event.target.classList.contains('.box-profile')) {
+   //boxprofile.classList.toggle('hidden');
+//} console.log('hidden')
+//}
+//)
+//

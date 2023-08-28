@@ -3,9 +3,17 @@ html, body{
     padding: 0;
     box-sizing: border-box;
     max-width: 1440px;
+    font-family: 'Forum', cursive;
+    font-family: 'Inter', sans-serif;
+
 }
 
+.header {
+    background-color: black;
+    width: 1440px;
+    height: 90px;
 
+}
 
 .wrapper {
     max-width: 1440px;
@@ -16,17 +24,23 @@ html, body{
     
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    float: left;
+
+}
+
 .list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 0px;
-    padding-right: 0px;
+    float: left;
     
     
 }
 
 .list1 {
-    margin-right: 30px;
+    margin-left: 40px;
 }
 
 .text1 {
@@ -45,20 +59,83 @@ html, body{
     opacity: .70;
 }
 
+.menu-profile {
+    margin-top: 39px;
+
+}
+
+
 .icon {
     width: 28px;
     height: 28px;
-    padding-right: 60px;
+    padding-right: 0%;
     padding-top: 30px;
+    margin-right: 40px;
+    cursor: pointer;
 
 }
 
-.header {
-    background-color: black;
-    width: 1440px;
-    height: 90px;
+.box-profile {
+    width: 80px;
+    height: 115px;
+    text-align: center;
+    margin-top: -23px;
+    background-color: white;
+    display: none;
+}
+
+.box-profile.active {
+    display: block;
+}
+
+
+.profile {
+    font-family: inter;
+    font-size: 15px;
+    font-weight: 700px;
+    font-style: normal;
+    margin-bottom: 30px;
+}
+
+.profile-line {
+    width: 40px;
+    height: 1px;
+    background: #bb945f;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+.profile-text {
+    width: 59px;
+    height: 50px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.login {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
 
 }
+
+.register {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+
+
 
 .text {
     display: flex;
@@ -92,11 +169,14 @@ html, body{
 .subject {
     color: white;
     font-style: forum;
+    font-style: normal;
+    font-weight: 100;
     font-size: 30px;
     letter-spacing: 3px;
     text-align: center;
     width: 520px;
     height: 150px;
+    
 }
 
 /*about*/
@@ -204,7 +284,7 @@ html, body{
     cursor: pointer;
 }
 
-.active {
+.slider-button1.active {
     background-color: #bb945f;
 }
 
@@ -396,6 +476,7 @@ label {
     text-align: center;
     font-style: forum;
     font-size: 18px;
+    white-space: nowrap;
     
 }
 
@@ -1213,6 +1294,7 @@ label {
     width: 220px;
     height: 40px;
     margin-top: 5px;
+    white-space: nowrap;
 }
 
 .line4 {
