@@ -102,18 +102,74 @@ document.addEventListener('click', e => {
   }
 })
 
+// modal register
+
+const register = document.querySelector('.register');
+const modal = document.querySelector('.modal');
+const close = document.querySelector('.button-close');
+const overlay = document.querySelector('.overlay');
+const buttoncard = document.querySelector('.button-card');
 
 
+  register.addEventListener('click', () => {
+    modal.classList.toggle('active');
+})
+
+  close.addEventListener('click', () => {
+    modal.classList.toggle('active');
+})
+
+  overlay.addEventListener('click', () => {
+    modal.classList.toggle('active');
+})
+
+  buttoncard.addEventListener('click', () => {
+    modal.classList.toggle('active');
+  })
 
 
-//icon.addEventListener('click', () => {
-  //   boxprofile.classList.toggle('hidden');
-//})
+//localstorage
 
-//window.addEventListener('click', (event) => {
-  //if(event.target.classList.contains('.box-profile')) {
-   //boxprofile.classList.toggle('hidden');
-//} console.log('hidden')
-//}
-//)
-//
+const form = document.querySelector('.form-register');
+ const name = document.querySelector('#firstname');
+ const lname = document.querySelector('#lastname');
+ const email = document.querySelector('#email');
+ const password = document.querySelector('#password');
+ const btnregister = document.querySelector('.button-register');
+
+let users = {};
+
+
+function User (name, lname, email, password) {
+  this.name = name;
+  this.lname = lname;
+  this.email = email;
+  this.password = password;
+} 
+
+
+function createid (users) {
+  return Object.keys(users).length;
+
+}
+btnregister.addEventListener('click', (event) => {
+event.preventDefault();
+  
+  const nameuser = name.value;
+  const lnameuser = lname.value;
+  const emailuser = email.value;
+  const passworduser = password.value;
+
+  const user = new User(nameuser, lnameuser, emailuser, passworduser);
+
+  const userid = 'user' + createid(users);
+  users[userid] = user;
+
+  let usermas = Object.values(users);
+
+  localStorage.setItem('usermas', JSON.stringify(usermas));
+
+
+})
+
+
