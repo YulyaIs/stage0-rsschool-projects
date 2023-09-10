@@ -347,5 +347,30 @@ modal2.classList.toggle('active');
 })};
 
 
+//modal profile
+
+const modal4 = document.querySelector('.modal4');
+const overlay4 = document.querySelector('.overlay4');
+const close3 = document.querySelector('.button-close3');
+const myprofile = document.querySelector('.myprofile');
 
 
+close3.addEventListener('click', () => {
+  modal4.classList.toggle('active');
+});
+
+overlay4.addEventListener('click', () => {
+  modal4.classList.toggle('active');
+});
+
+myprofile.addEventListener('click', () => {
+  modal4.classList.toggle('active');
+});
+
+
+
+console.log("Самооценка  /200")
+console.log("1. Нет адаптивности под мобильную версию. +36 (наверное)")
+console.log("2. Не сгенерирован номер. Нет совпадения карт. +37 (снова наверное)")
+console.log("3. Вроде все норм... +29 ")
+console.log("4. Всего и не перечислить)) нет почти никакой интерактивности. +54 (вроде)")
