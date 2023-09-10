@@ -39,20 +39,22 @@
             </div>
         </div>
         </div>
-        <div class="icon-auth" id="icon1">
+        <div class="auth-profile">
+        <div class="icon-auth" id="icon1" title="Yulya Ishim">
             <div class="iniciali"></div>
         </div>
         <div class="box-profile1">
             <div class="profile-content1">
-                <div class="profile1"><h4>card</h4></div>
+                <div class="profile1"><h4>F76385291</h4></div>
                 <div class="profile-line1"></div>
                 <div class="profile-text1">
                     <div class="myprofile">My profile</div>
                     <div class="logout">Log out</div>
-                </div>
             </div>
         </div>
     </div>
+    </div>
+</div>
 </div>
     </header>        
     <main class="main">
@@ -152,7 +154,7 @@
                         <p>An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
                     </div>
                     <div class="button-first-book">
-                        <button class="buy-button">Buy</button>
+                        <button class="buy-button" id="button-buy">Buy</button>
                     </div>
                     <div id="img-first-book"></div>     
                 </div>
@@ -679,19 +681,19 @@
         <form class="form-register">
         <div class="input-register">
             <label for="firstname">First name</label>
-            <input id="firstname" type="text" placeholder="Enter your name" name="firstname">
+            <input id="firstname" type="text" placeholder="Enter your name" name="firstname" required>
         </div>
         <div class="input-register">
             <label for="lastname">Last name</label>
-            <input id="lastname" type="text" placeholder="Enter your last name" name="lastname">
+            <input id="lastname" type="text" placeholder="Enter your last name" name="lastname" required>
         </div>
         <div class="input-register">
             <label for="email">E-mail</label>
-            <input id="email" type="email" placeholder="something@example.com" name="email">
+            <input id="email" type="email" placeholder="something@example.com" name="email" required>
         </div>
         <div class="input-register">
             <label for="password">Password</label>
-            <input id="password" type="password" placeholder="At least 8 characters" name="password" minlength="8">
+            <input id="password" type="password" placeholder="At least 8 characters" name="password" minlength="8" required>
         </div>
             <button type="submit" class="button-register">Sign up</button>
         </form>
@@ -715,11 +717,11 @@
         <form class="form-login">
             <div class="input-login">
                 <label for="E-mail or readers card">E-mail or readers card</label>
-                <input id="emailcard" type="text" placeholder="Enter e-mail or readers card" name="emailcard">
+                <input id="emailcard" type="text" placeholder="Enter e-mail or readers card" name="emailcard" required>
             </div>
             <div class="input-login">
                 <label for="password">Password</label>
-                <input id="password1" type="password" placeholder="At least 8 characters" name="password" minlength="8">
+                <input id="password1" type="password" placeholder="At least 8 characters" name="password" minlength="8" required>
             </div>
             <button type="submit" class="button-login">Log in</button>
         </form>
@@ -732,6 +734,7 @@
     </div>
     <!--modal buy a library card-->
     <div class="modal2">
+        <div class="modal-card">
         <div class="modal-title">
             <span class="button-close2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
@@ -745,15 +748,15 @@
             <form class="form-card">
                 <div class="input3">
                     <label for="Bank card number">Bank card number</label>
-                <input id="bankcard" type="number" name="bankcard">
+                <input id="bankcard" type="text" name="bankcard" minlength="16" required>
                 </div>
                 <label for="Expiration code">Expiration code</label>
               <div class="input4">
-                <input id="month" type="number" name="month" max="2"><input id="year" type="number" name="year" max="2">
+                <input id="month" type="text" name="month" minlength="2" maxlength="2"required><input id="year" type="text" name="year" maxlength="2" minlength="2" required>
               </div>
               <label for="CVC">CVC</label>
                <div class="input5">
-                <input id="cvc" type="number" name="cvc" min="3">
+                <input id="cvc" type="text" name="cvc" minlength="3" maxlength="3" required>
             </div>
             </form>
             <form class="form-card1">
@@ -772,37 +775,47 @@
         <div class="modal-text1">
             If you are live, work, attend school,<br> or pay property taxes in New York<br> State, you can get a $25 digital<br> library card right now using this<br> online form. Visitors to New York<br> State can also use this form to<br> apply for a temporary card.      
            </div>
-    </div>
-    <div class="modal3">
-        <div class="librarycard">
-            <div class="title-card2">
-                <div class="text-card3">Digital Library Cards</div>
-                <div class="line8"></div>
+        </div>
+    <div class="overlay2"></div>
+</div>
+    <!--modal3-->
+    <section class="container-librarycard1">
+        <div id="box6">
+            <div class="title7">
+                <h2 id="5">Digital Library Cards</h2>
             </div>
-            <div class="text-card4"></div>
-            <div class="yourcard">
-                <div class="wrapper-librarycard">
-                    <div class="find-card">
-                        <div class="title-card1">
-                            <p>Find your Library card</p>
+            <div class="line6"></div>
+        </div>
+        <div class="wrapper-librarycard">
+            <div class="find-card">
+                <div class="title-card1">
+                    <p>Your Library card</p>
+                </div>
+                <div class="box-card">
+                    <div class="gold-card">
+                        <div class="text-card2">
+                            <h3>Brooklyn Public Library</h3>
                         </div>
-                        <div class="box-card">
-                            <div class="gold-card">
-                                <div class="text-card2">
-                                    <h3>Brooklyn Public Library</h3>
-                                </div>
-                                <form>
-                                    <input type="text" name="Reader's name" value="Reader's name" class="input1">
-                                    <input type="text" name="Card number" value="Card number" class="input2">
-                                </form>
-                            </div>
-                            <button class="button-card3">Check the card</button>
-                        </div>
+                        <form>
+                            <input type="text" name="Reader's name" value="Yulya Ishim" class="input1">
+                            <input type="text" name="Card number" value="F76385291" class="input2">
+                        </form>
                     </div>
-
+                    <div class="cards-profile">
+                        <div class="visits"></div>
+                        <div class="bonuses"></div>
+                        <div class="books-card"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="get-a-card">
+                <p class="title-card">Visit your profile</p>
+                <p class="text-card1">With a digital library card you get free access<br> to the Library’s wide array of digital resources<br> including e-books, databases, educational<br> resources, and more. </p>
+                 <button class="button-card2">Profile</button>
             </div>
         </div>
-    </div>
+       </section>
+      
     <script src="index.js"></script>
 </body>
 </html>

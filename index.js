@@ -148,8 +148,8 @@ form.addEventListener('submit', (event) => {
   form.addEventListener('submit', () => {      
     authicon.classList.toggle('active');
 
-    //const elem = document.getElementsByClassName('iniciali');
-    //elem[0].innerHTML = "YI"
+    const elem = document.getElementsByClassName('iniciali');
+    elem[0].innerHTML = "YI"
 
   });
 
@@ -171,6 +171,8 @@ form.addEventListener('submit', (event) => {
  //profile
 
  const boxprofile1 = document.querySelector('.box-profile1');
+ const logout = document.querySelector('.logout');
+ const menuprofile = document.querySelector('.menu-profile');
 
 const toggleboxprofile1 = () => {
   boxprofile1.classList.toggle('active');
@@ -194,121 +196,42 @@ document.addEventListener('click', e => {
   }
 });
 
+logout.addEventListener('click', () => {
+  boxprofile1.classList.toggle('active');
+}); 
+
+logout.addEventListener('click', () => {
+  authicon.classList.toggle('active');
+});
+
+logout.addEventListener('click', () => {
+  icon.classList.toggle('none')
+})
+
+
 
 
 //localstorage
 
 //const form = document.querySelector('.form-register');
- const name = document.querySelector('#firstname').value;
- const lname = document.querySelector('#lastname').value;
- const email = document.querySelector('#email').value;
- const password = document.querySelector('#password').value;
+ const name = document.querySelector('#firstname');
+ const lname = document.querySelector('#lastname');
+ const email = document.querySelector('#email');
+ const password = document.querySelector('#password');
  const btnregister = document.querySelector('.button-register');
  const iconauth = document.querySelector('.icon-auth');
 
- const users = [
-  {name: 'Yulya', lname: 'Ishim', email: 'lulu@mail.ru', password: '12345678'}, 
-  {name: 'Lida', lname: 'Ivanova', email: 'kuku@mail.ru', password: '23456789'},
-  {name: 'Mila', lname: 'Petrova', email: 'dudu@mail.ru', password: '34567890'},
- ];
+  const user1 = {name: 'Yulya', lname: 'Ishim', email: 'lulu@mail.ru', password: '12345678'} 
+ // const user2 = {name: 'Lida', lname: 'Ivanova', email: 'kuku@mail.ru', password: '23456789'}
+ // const user3 = {name: 'Mila', lname: 'Petrova', email: 'dudu@mail.ru', password: '34567890'}
+
+ // const users = [user1, user2, user3]
+ const users = [user1]
+ 
 
   localStorage.setItem('users', JSON.stringify(users));
 
-  //const saveduser = JSON.parse(localStorage.getItem('users')); 
-
- //// const user = users.find(function (item) {
-   // for ( i = 0; i > users.length; i++) {
-   // } 
-  //});
-    ////if ( user === saveduser) {
-     // iconauth.toggle.classList('active');
-//console.log(user)
-   // }
-
-   // return item.name === 'Yulya';
-  //});
-
-  
-  //form.addEventListener('submit', (event) => {
-  //  event.preventDefault();
-
-  //  if (user === saveduser)
-  //  alert('Welcome')
-  //else {
-  //  alert('uncorrect')
-  //}
-
-    //if (name === 'Yulya', lname === 'Ishim', email === 'lulu@mail.ru', password === '12345678')
-    //alert ('Welcome');
-    //else if (name === 'Lida', lname === 'Ivanova', email === 'kuku@mail.ru', password === '23456789')
-    //alert ('Welcome');
-    //else if (name === 'Mila', lname === 'Petrova', email === 'dudu@mail.ru', password === '34567890')
-    //alert ('Welcome');
-    //else {
-    //alert ('Uncorrect');
-    //}
-    
-
-     
-
-
-
-
-
-
-  //form.addEventListener('submit', () => {
-  //  modal.classList.toggle('active');
-  
-  //});
-
-
-//let users = {};
-//let usermas = [];
-
-
-//function User (name, lname, email, password) {
-  //this.name = name;
-  //this.lname = lname;
-  //this.email = email;
-  //this.password = password;
-//} 
-
-
-//function createid (users) {
-  //return Object.keys(users).length;
-
-//}
-//form.addEventListener('submit', (event) => {
-//event.preventDefault();
-  
-  //const nameuser = name.value;
-  //const lnameuser = lname.value;
-  //const emailuser = email.value;
-  //const passworduser = password.value;
-
-  //const user = new User(nameuser, lnameuser, emailuser, passworduser);
-
-  //const userid = 'user' + createid(users);
-  //users[userid] = user;
-
-  //let usermas = Object.values(users);
-  //usermas.push(users);
-
-  //localStorage.setItem('usermas', JSON.stringify(usermas));
-
-//});
-
-//form.addEventListener('submit', () => {
-  //modal.classList.toggle('active');
-
-//});
-
-//const saveduser = JSON.parse(localStorage.getItem('usermas')); 
-
-//const user = usermas.find(function (item) {
-  //return item.make === 'user';
-//});
-//console.log('item');
+  const savedusers = JSON.parse(localStorage.getItem('users')); 
 
 
 // modal login
@@ -348,20 +271,81 @@ const form1 = document.querySelector('.form-login');
     const btn = buybtn[i];
   btn.addEventListener('click', (e) => {
   modal1.classList.toggle('active');
-  console.log('btn')
+
 })};
 
 form1.addEventListener('submit', (event) => {
   event.preventDefault();
-})
+});
 
- // const user = users.find(function (item) {
-   // return item.email === 'lulu@mail.ru';
-    //console.log(email)
+form1.addEventListener('submit', () => {
+  modal1.classList.toggle('active');
 
- // if (item.email === saveduser)
- // alert('Welcome')
- // else {
- // alert('uncorrect')
-//}})
+});
+
+form1.addEventListener('submit', () => {
+  icon.classList.toggle('none');
+}) 
+
+form1.addEventListener('submit', () => {      
+authicon.classList.toggle('active');
+
+const elem = document.getElementsByClassName('iniciali');
+elem[0].innerHTML = "YI"
+
+});
+
+
+
+ 
+//function auth () {
+  //if (email.value === 'lulu@mail.ru' && password.value === '12345678')
+  //alert ('Welcome');
+  //else if (name === 'Lida', lname === 'Ivanova', email === 'kuku@mail.ru', password === '23456789')
+  //alert ('Welcome');
+  //else if (name === 'Mila', lname === 'Petrova', email === 'dudu@mail.ru', password === '34567890')
+  //alert ('Welcome');
+  //else {
+  //alert ('Uncorrect');
+  //}}
+
+ 
+//}
 //})
+
+//modal buy card
+
+const modal2 = document.querySelector('.modal2');
+const overlay2 = document.querySelector('.overlay2');
+const close2 = document.querySelector('.button-close2');
+const form2 = document.querySelector('.form-card');
+const btncard = document.querySelector('.button-buy')
+
+
+close2.addEventListener('click', () => {
+  modal2.classList.toggle('active');
+});
+
+overlay2.addEventListener('click', () => {
+  modal2.classList.toggle('active');
+});
+
+btncard.addEventListener('click', (event) => {
+  event.preventDefault();
+});
+
+btncard.addEventListener('click', () => {
+  modal2.classList.toggle('active');
+console.log(submit)
+});
+
+
+for( let i = 0; i < buybtn.length; i++) {
+  const btn = buybtn[i];
+btn.addEventListener('click', (e) => {
+modal2.classList.toggle('active');
+})};
+
+
+
+

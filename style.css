@@ -63,9 +63,11 @@ nav {
 
 .menu-profile {
     margin-top: 39px;
+}
+.menu-profile.active {
+    display: block;
 
 }
-
 
 .icon {
     width: 28px;
@@ -2119,7 +2121,7 @@ label {
 
 /*modal login*/
 
-.modal {
+.modal1 {
     position: fixed;
     top: 0;
     left: 0;
@@ -2131,11 +2133,11 @@ label {
     display: none;
 }
 
-.modal.active {
+.modal1.active {
     display: flex;
 }
 
-.overlay {
+.overlay1 {
     opacity: 0.8;
     background-color: #000;
     width: 100%;
@@ -2267,7 +2269,7 @@ label {
 }
 
 /*modal buy a library card*/
-.modal1 {
+.modal2 {
     position: fixed;
     top: 0;
     left: 0;
@@ -2279,12 +2281,12 @@ label {
     display: none;
 }
 
-.modal1.active {
+.modal2.active {
     display: flex;
 }
 
-.overlay1 {
-    opacity: 0.8;
+.overlay2 {
+    opacity: 0.4;
     background-color: #000;
     width: 100%;
     height: 100%;
@@ -2293,7 +2295,7 @@ label {
 
 }
 
-.modal2 {
+.modal-card {
     width: 640px;
     height: 540px;
     background-color: white;
@@ -2301,8 +2303,7 @@ label {
     flex-wrap: wrap;
     justify-content: space-between;
     border: 1px solid black;
-
-
+    z-index: 2;
 
 }
 
@@ -2398,6 +2399,16 @@ label {
     height: 20px;
 }
 
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:not(:focus):invalid {
+    border: 1px solid #BB945F;
+
+}
+
 .buycard {
     width: 200px;
     display: flex;
@@ -2410,6 +2421,7 @@ label {
     width: 75px;
     height: 30px;
     background-color: white;
+    cursor: pointer;
 }
 
 .price {
@@ -2425,7 +2437,9 @@ label {
 }
 
 /*icon auth*/
-
+.auth-profile.none {
+    display: none;
+}
 
 .icon-auth {
     width: 28px;
@@ -2455,7 +2469,6 @@ label {
 .box-profile1.active {
     display: block;
 }
-
 
 .profile1 {
     font-family: inter;
@@ -2513,3 +2526,8 @@ label {
     margin-left: 4px;
     letter-spacing: 2px;
 }
+
+.container-librarycard1 {
+    display: none;
+}
+
