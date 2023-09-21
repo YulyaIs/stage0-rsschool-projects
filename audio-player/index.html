@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Audio-player</title>
+</head>
+<body>
+    <img src="./assets/img/Imagine-Dragons.jpg" alt="Imagine-Dragons" id="artist-background">
+    <audio src="./assets/audio/Imagine Dragons - Believer.mp3" id="song"></audio>
+    <div class="conteiner">     
+            <img src="./assets/img/Imagine-Dragons1.jpg" alt="Imagine-Dragons" id="thumbnail">
+        <div class="box">
+            <div class="play-pause">
+                <img src="./assets/svg/play1.png" alt="play" id="play">
+                <img src="./assets/svg/pause1.png" alt="pause" id="pause">
+            </div>
+            <div class="artist-song">
+                <div class="artist" id="artist">Imagine Dragons</div>
+                <div class="song" id="song">Believer</div>
+            </div>
+            <div class="next-prev">
+                <img src="./assets/svg/prev1.png" alt="backward" id="prevsong">
+                <img src="./assets/svg/next1.png" alt="forward" id="nextsong">
+            </div>
+            <div class="progress">
+                <input type="range" id="progress" min="0" max="100" value="70">
+            </div>
+            <div class="time-song">
+                <div class="currenttime"></div>
+                <div class="durationtime"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
