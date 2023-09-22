@@ -7,33 +7,51 @@
     <title>Audio-player</title>
 </head>
 <body>
-    <img src="./assets/img/Imagine-Dragons.jpg" alt="Imagine-Dragons" id="artist-background">
-    <audio src="./assets/audio/Imagine Dragons - Believer.mp3" id="song"></audio>
+    <section class="main">
+    <img src="./assets/img/Imagine-Dragons.jpg" alt="Imagine-Dragons" id="artist-background" class="artist-background">
+    <audio src="./assets/audio/Imagine Dragons - Believer.mp3" id="song" class="song"></audio>
     <div class="conteiner">     
-            <img src="./assets/img/Imagine-Dragons1.jpg" alt="Imagine-Dragons" id="thumbnail">
+            <img src="./assets/img/Imagine-Dragons1.jpg" alt="Imagine-Dragons" id="thumbnail" class="thumbnail">
         <div class="box">
             <div class="play-pause">
-                <img src="./assets/svg/play1.png" alt="play" id="play">
-                <img src="./assets/svg/pause1.png" alt="pause" id="pause">
+                <button class="play" id="play"></button>
+             <!--   <button class="pause" id="pause"></button>
+ <!--             <img src="./assets/svg/play1.png" alt="play" id="play" class="play">
+                <img src="./assets/svg/pause1.png" alt="pause" id="pause" class="pause"> -->
             </div>
             <div class="artist-song">
                 <div class="artist" id="artist">Imagine Dragons</div>
-                <div class="song" id="song">Believer</div>
+                <div class="song-title" id="song-title">Believer</div>
             </div>
             <div class="next-prev">
-                <img src="./assets/svg/prev1.png" alt="backward" id="prevsong">
-                <img src="./assets/svg/next1.png" alt="forward" id="nextsong">
+                <img src="./assets/svg/prev1.png" alt="backward" id="prevsong" class="prevsong">
+                <img src="./assets/svg/next1.png" alt="forward" id="nextsong" class="nextsong">
             </div>
             <div class="progress">
                 <input type="range" id="progress" min="0" max="100" value="70">
             </div>
             <div class="time-song">
-                <div class="currenttime"></div>
-                <div class="durationtime"></div>
+                <div class="currenttime" id="currenttime">00:00</div>
+                <div class="durationtime" id="durationtime">03:31</div>
             </div>
         </div>
     </div>
-    
+</section>
+    <section class="footer">
+        <div class="box2">
+            <div class="github">
+                <a href="https://github.com/YulyaIs" class="link">YulyaIs</a>
+            </div>
+            <div class="data">
+                <time>2023</time>
+            </div>
+            <div class="rsschool">
+                <a href="https://rs.school/js-stage0/" target="_blank">
+                    <img src="https://rs.school/images/rs_school_js.svg" width="300" height="40" alt="logo">
+                </a>
+            </div>
+        </div>
+    </section>
     <script src="index.js"></script>
 </body>
 </html>
