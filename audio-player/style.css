@@ -62,6 +62,7 @@ button {
     height: 70px;
     background-color: cadetblue;
     border: cadetblue;
+    cursor: pointer;
 }
 
 .pause {
@@ -90,7 +91,7 @@ button {
     align-items: center;
 }
 
-#progress {
+.slider {
     width: 300px;
     height: 7px;
     background: black;
