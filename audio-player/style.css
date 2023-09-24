@@ -1,5 +1,5 @@
 body {
-    width: 100%;
+    min-width: 100%;
     height: 100%;
 
 }
@@ -23,8 +23,8 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 500px;
-    height: 600px;
+    width: 350pt;
+    height: 400pt;
     box-shadow: 0 0 40px white;
 }
 
@@ -33,7 +33,7 @@ body {
     position: absolute;
     transition: 1s;
     width: 100%;
-    height: 70%;
+    height: 60%;
     z-index: 3;
     top: 0px;
 }
@@ -42,15 +42,15 @@ body {
     position: absolute;
     background-color: cadetblue;
     width: 100%;
-    height: 30%;
-    top: 420px;
+    height: 40%;
+    top: 320px;
     z-index: 4;
 
 }
 
 .play-pause {
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 60px;
     cursor: pointer;
    
@@ -58,8 +58,8 @@ body {
 button {
     background-image: url(./assets/svg/play.png);
     background-size: contain;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background-color: cadetblue;
     border: cadetblue;
     cursor: pointer;
@@ -73,7 +73,7 @@ button {
 .next-prev {
     width: 150px;
     position: absolute;
-    top: 70px;
+    top: 80px;
     right: 50px;
     display: flex;
     justify-content: space-between;
@@ -82,7 +82,7 @@ button {
 
 .progress {
     position: absolute;
-    bottom: 25px;
+    bottom: 40px;
     left: 20%;
     width: 300px;
     height: 10px;
@@ -115,14 +115,14 @@ input[type="range"]::-webkit-slider-thumb{
 
 .artist {
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     font-style: normal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .song-title {
     color: rgb(43, 40, 40);
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -132,8 +132,8 @@ input[type="range"]::-webkit-slider-thumb{
     display: flex;
     justify-content: space-between;
     width: 300px;
-    bottom: 10px;
-    left: 100px;
+    bottom: 50px;
+    left: 93px;
 
 
 }
@@ -150,25 +150,33 @@ input[type="range"]::-webkit-slider-thumb{
 
 .box2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     z-index: 4;
+    position: absolute;
+    top: 190px;
+    width: 100%;
+    align-items: center;
+    margin-left: 10px;
 }
 
 .github {
-    font-size: 25px;
+    font-size: 15px;
     font-style: normal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration-line: none;
 }
 
 .link {
-    color: cadetblue;
+    color: black;
+    text-decoration: none;
 }
 
 .data {
-    font-size: 25px;
-    color: cadetblue;
+    font-size: 15px;
+    color: black;
 }
 
 .rsschool {
-    font-size: 40px;
+    font-size: 20px;
 }
+

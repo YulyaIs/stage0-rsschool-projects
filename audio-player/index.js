@@ -12,45 +12,37 @@ const current = document.querySelector('.current-time');
 const durationtime = document.querySelector('.duration-time');
 const slider = document.querySelector('.slider')
 
-//const background = document.getElementById('artist-background');
-//const song = document.getElementById('song');
-//const thumbnail = document.getElementById('thumbnail');
-//const play = document.getElementById('play');
-//const pause = document.getElementById('pause');
-//const artist = document.getElementById('artist');
-//const songtitle = document.getElementById('song-title');
-//const prev = document.getElementById('prevsong');
-//const next = document.getElementById('nextsong');
-//const progress = document.getElementById('progress');
-//const currenttime = document.getElementById('currenttime');
-//const durationtime = document.getElementById('durationtime');
-
 let songIndex = 0;
 
 let backgrounds = [
     "./assets/img/Imagine-Dragons.jpg",
     "./assets/img/The_score1.jpg",
-    "./assets/img/Elvis_Presley1.jpg"
+    "./assets/img/the_score3.jpg",
+    "./assets/img/imagine_dragons2.jpg",
+    "./assets/img/Elvis_Presley1.jpg",
 ]
 
 let songs = [ 
     "./assets/audio/Imagine Dragons - Believer.mp3",
     "./assets/audio/The Score - Glory.mp3",
+    "./assets/audio/The Score - The Fear.mp3",
+    "./assets/audio/Imagine Dragons - I'm So Sorry.mp3",
     "./assets/audio/Elvis Presley ft. Junkie XL - A Little Less Conversation.mp3",
 ];
 
 let thumbnails = [
     "./assets/img/Imagine-Dragons1.jpg",
     "./assets/img/The_score.jpg",
+    "./assets/img/the_score2.jpg",
+    "./assets/img/imagine_dragons1.jpg",
     "./assets/img/Elvis_Presley.jpg",
 ]; 
     
-let artists = ["Imagine Dragone", "The Score", "Elvis Presley"];
+let artists = ["Imagine Dragone", "The Score", "The Score", "Imagine Dragons", "Elvis Presley"];
 
-let songtitles = ["Believer", "Glory", "A Little Less Conversation"];
+let songtitles = ["Believer", "Glory", "The Fear", "I'm So Sorry", "A Little Less Conversation"];
 
 let playing = true;
-//let audio = newaudio;
 
 play.addEventListener ('click', playPause);
 //pause.addEventListener ('click', playPause);
@@ -72,9 +64,6 @@ function playPause () {
   playing = true;
 }
 }
-
-  
-  //play.addEventListener("click", pausePlay);
   
   song.addEventListener("ended", nextsong);
   
