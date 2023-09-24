@@ -25,7 +25,7 @@ body {
     position: absolute;
     width: 500px;
     height: 600px;
-    box-shadow: 0 0 30px white;
+    box-shadow: 0 0 40px white;
 }
 
 
@@ -120,8 +120,8 @@ input[type="range"]::-webkit-slider-thumb{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.song {
-    color: black;
+.song-title {
+    color: rgb(43, 40, 40);
     font-size: 25px;
     font-style: normal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
