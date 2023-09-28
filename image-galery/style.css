@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(46, 45, 45);
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    width: 100%;
+    background-color:slateblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+
+}
+
+h2 {
+    font-size: 50px;
+    font-style: normal;
+}
+
+.camera {
+    width: 70px;
+    height: 70px;
+
+}
+
+.search-box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+
+.search {
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close {
+    width: 30px;
+    display: none;
+    
+}
+
+.input {
+    width: 70%;
+    height: 40px;
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+:placeholder-shown {
+    font-size: 30px;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 30px;
+    
+    
+}
+
+.imgcard {
+    width: 500px;
+    height: 400px;
+    cursor: pointer;
+
+}
+
+img {
+    object-fit: cover;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.more {
+    margin-top: 20px;
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+    background-color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.data {
+    font-size: 30px;
+    color: black;
+
+}
+
+
+.link {
+    font-size: 30px;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+
