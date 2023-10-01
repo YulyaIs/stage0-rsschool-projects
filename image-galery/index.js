@@ -5,11 +5,15 @@ const search = document.querySelector('.search-box')
 const key = `b1YRF4ytLir8hPR_szjquDquc1vfHMxSlaTnn1leFPM`
 const btnmore = document.querySelector('.more');
 const lupa = document.querySelector('.search');
-const close = document.querySelector('.close');
+const closebtn = document.querySelector('.closebtn');
+const searchbtn = document.querySelector('.searchbtn');
+const modalimg = document.querySelector('.modalimg');
+const btnclose1 = document.querySelector('.btnclose1');
+const overloy = document.querySelector('.overloy');
 
 const per_page = 30;
 const keyword = '';
-const page = 1;
+let page = 1;
 
 
 window.onload = () => {
@@ -39,7 +43,7 @@ function fetchData () {
    })
 
     })};
-      
+
 
 async function getData () {
     const keyword = input.value;
@@ -74,12 +78,41 @@ search.addEventListener('submit', (e) => {
    getData ();
 })
 
+search.addEventListener('submit', () => {
+    closebtn.classList.toggle('active')
+   // console.log(close)
+})
 
-//btnmore.addEventListener('click', (e) => {
-  //  if(page >1)
-    //btnmore
-
-    //getData ();
+//search.addEventListener('submit', () => {
+  //  lupa.classList.toggle('none')
+   // console.log(close)
 //})
 
+closebtn.addEventListener('click', () => {
+    closebtn.classList.toggle('active')
+    console.log(closebtn)
+})
+
+
+btnmore.addEventListener('click', () => {
+    page++;
+    getData()
+    fetchData()
+});
+  //console.log(btnmore)
+
+
+images.addEventListener('click', () => {
+    modalimg.classList.toggle('active')
+  
+})
+
+
+btnclose1.addEventListener('click', () => {
+    modalimg.classList.toggle('active');
+  });
+  
+overloy.addEventListener('click', () => {
+    modalimg.classList.toggle('active');
+  });
 
