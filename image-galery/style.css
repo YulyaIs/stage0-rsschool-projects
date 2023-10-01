@@ -39,10 +39,23 @@ h2 {
 }
 
 .search {
-    width: 30px;
+    width: 35px;
     position: absolute;
     right: 10px;
     cursor: pointer;
+}
+
+.searchbtn {
+    background-color: white;
+    width: 50px;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    border: none;
+
 }
 
 .close {
@@ -64,7 +77,11 @@ h2 {
 
 .main {
     width: 100%;
-    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 30px;
     margin-top: 40px;
 }
 
@@ -75,19 +92,34 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     row-gap: 30px;
+    margin-top: 40px;
     
     
 }
+
 
 .imgcard {
     width: 500px;
     height: 400px;
     cursor: pointer;
+    border: 10px solid slateblue;
 
 }
 
-img {
+.imgcard img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.images img {
+    width: 500px;
+    height: 400px;
+    cursor: pointer;
+    border: 10px solid slateblue;
+    object-fit: cover;
+
 }
 
 .btn {
