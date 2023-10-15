@@ -26,12 +26,10 @@ gameover.volume = 0.6;
 let fail = new Audio();
 fail.volume = 0.7;
 
-startgame.src = "./assets/mp3/start.mp3";
+startgame.src = "./assets/mp3/start1.mp3";
 gameover.src = "./assets/mp3/gameover.mp3";
 eatfood.src = "./assets/mp3/eat1.mp3";
 fail.src = "./assets/mp3/udar1.mp3";
-
-
 
 
 let gameOver = false;
@@ -106,14 +104,13 @@ const initGame = () => {
        
         
 
-    localStorage.setItem('score',(localStorage.getItem('score') || ``) + `${score}`);
+    localStorage.setItem('score'(localStorage.getItem('score') || ``) + `${score}`);
         
 
        // highScore = score >= highScore ? score : highScore;
-       // localStorage.setItem('high-score', highScore);
+       // localStorage.setItem('score', score);
         score_.innerText = `Score: ${score}`;
-       // highScore_.innerText = `High score: ${highScore}`;
-       // localStorage.setItem('list', score);
+        li.innerText = `Score: ${score}`;
 
     }
 
