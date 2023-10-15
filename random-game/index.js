@@ -10,7 +10,29 @@ const controls = document.querySelectorAll('.controls button');
 const result = document.querySelector('.results');
 const overlay = document.querySelector('.overlay');
 const closeBtn = document.querySelector('.close');
-const list = document.querySelectorAll('.list')
+const list = document.querySelectorAll('.list');
+const playBtn = document.querySelector('.playbtn');
+const game = document.querySelector('.game');
+const start = document.querySelector('.start');
+const end = document.querySelector('.end');
+const replay = document.querySelector('.replay');
+
+let startgame = new Audio();
+startgame.volume = 0.6;
+let eatfood = new Audio();
+eatfood.volume = 0.7;
+let gameover = new Audio();
+gameover.volume = 0.6;
+let fail = new Audio();
+fail.volume = 0.7;
+
+startgame.src = "./assets/mp3/start.mp3";
+gameover.src = "./assets/mp3/gameover.mp3";
+eatfood.src = "./assets/mp3/eat1.mp3";
+fail.src = "./assets/mp3/udar1.mp3";
+
+
+
 
 let gameOver = false;
 let foodX, foodY;
@@ -20,15 +42,12 @@ let snake = [];
 let setIntervalId;
 let score = 0;
 
-//let result = localStorage.getItem('results') ? false : localStorage.getItem('savedResults');
 
 
-//let highScore = localStorage.getItem('high-score') || 0;
-//highScore_.innerText = `High score: ${highScore}`;
+//let scoreres = localStorage.getItem('score') || 0;
+//score_.innerText = `Score: ${scoreres}`;
 
-let res = localStorage.getItem('list') || [];
-list.innerText = `Score: ${res}`;
-console.log(list)
+
 
 const newFood = () => {
     foodX = Math.floor(Math.random() * 30) + 1;
@@ -36,11 +55,17 @@ const newFood = () => {
 
 }
 
+
 const handleGameOver = () => {
     clearInterval(setIntervalId)
     alert('Game Over: Press OK to replay...');
+  //  end.classList.toggle('active');
+   // game.classList.toggle('active');
     location.reload();
+    gameover.play();
+
 }
+
 
 const changeDirection = (e) => {
     if(e.key === 'ArrowUp') {
@@ -75,15 +100,20 @@ const initGame = () => {
         newFood();
         snake.push([foodX, foodY]);
         score ++;
+        eatfood.play();
 
-       // localStorage.setItem('score', score);
 
+       
+        
+
+    localStorage.setItem('score',(localStorage.getItem('score') || ``) + `${score}`);
+        
 
        // highScore = score >= highScore ? score : highScore;
        // localStorage.setItem('high-score', highScore);
         score_.innerText = `Score: ${score}`;
        // highScore_.innerText = `High score: ${highScore}`;
-        localStorage.setItem('list', score);
+       // localStorage.setItem('list', score);
 
     }
 
@@ -99,6 +129,7 @@ const initGame = () => {
 
     if(snakeX <= 0 || snakeX > 30 || snakeY <= 0 || snakeY > 30) {
         gameOver = true;
+        gameover.play();
     }
 
     for ( let i = 0; i < snake.length; i++) {
@@ -106,7 +137,14 @@ const initGame = () => {
     }
     gameBoard.innerHTML = htmlMarkup;
 
-   
+    playBtn.addEventListener('click', () => {
+        game.classList.toggle('active');
+      });
+
+    playBtn.addEventListener('click', () => {
+        start.classList.toggle('active');
+        startgame.play();
+      });
 
     result.addEventListener('click', () => {
         resultsModal.classList.toggle('active');
@@ -119,6 +157,21 @@ const initGame = () => {
       closeBtn.addEventListener('click', () => {
         resultsModal.classList.toggle('active');
       });
+
+     // replay.addEventListener('click', () => {
+       // start.classList.remove('active');
+      //});
+
+      //replay.addEventListener('click', () => {
+      //  game.classList.remove('active');
+      //});
+
+      //replay.addEventListener('click', () => {
+       // end.classList.remove('active');
+      //});
+//
+
+
 }
 
 
