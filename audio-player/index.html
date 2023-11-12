@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Audio-player</title>
+</head>
+<body>
+    <section class="main">
+    <img src="./assets/img/Imagine-Dragons.jpg" alt="Imagine-Dragons" id="artist-background" class="artist-background">
+    <audio src="./assets/audio/Imagine Dragons - Believer.mp3" id="song" class="song"></audio>
+    <div class="conteiner">     
+            <img src="./assets/img/Imagine-Dragons1.jpg" alt="Imagine-Dragons" id="thumbnail" class="thumbnail">
+        <div class="box">
+            <div class="play-pause">
+                <button class="play" id="play"></button>
+            </div>
+            <div class="artist-song">
+                <div class="artist" id="artist">Imagine Dragons</div>
+                <div class="song-title" id="song-title">Believer</div>
+            </div>
+            <div class="next-prev">
+                <img src="./assets/svg/prev1.png" alt="backward" id="prevsong" class="prevsong">
+                <img src="./assets/svg/next1.png" alt="forward" id="nextsong" class="nextsong">
+            </div>
+            <div class="progress">
+                <input type="range" id="slider" value="0" class="slider" min="0">
+            </div>
+            <div class="time-song">
+                <div class="current-time" id="currenttime">00:00</div>
+                <div class="duration-time" id="durationtime">00:00</div>
+            </div>
+        <div class="box2">
+            <div class="github">
+                <a href="https://github.com/YulyaIs" class="link">YulyaIs</a>
+            </div>
+            <div class="data">
+                <time>2023</time>
+            </div>
+            <div class="rsschool">
+                <a href="https://rs.school/js-stage0/" target="_blank">
+                    <img src="https://rs.school/images/rs_school_js.svg" width="100px" height="20px" alt="logo">
+                </a>
+            </div>
+        </div>
+        </div>
+   </section>
+    <script src="index.js"></script>
+</body>
+</html>
