@@ -3,53 +3,8 @@ html, body{
     padding: 0;
     box-sizing: border-box;
     max-width: 1440px;
-}
-
-
-
-.wrapper {
-    max-width: 1440px;
-    height: 90px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-}
-
-.list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 0px;
-    padding-right: 0px;
-    
-    
-}
-
-.list1 {
-    margin-right: 30px;
-}
-
-.text1 {
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
-    padding-top: 20px;
-    font-style: inter;
-    font-weight: 20;
-    text-decoration: none;
-    font-size: 20px;
-
-}
-
-.text1:hover, text1:focus, .text1:active{
-    opacity: .70;
-}
-
-.icon {
-    width: 28px;
-    height: 28px;
-    padding-right: 60px;
-    padding-top: 30px;
+    font-family: 'Forum', cursive;
+    font-family: 'Inter', sans-serif;
 
 }
 
@@ -60,6 +15,137 @@ html, body{
 
 }
 
+.wrapper {
+    max-width: 1440px;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    float: left;
+
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    
+    
+}
+
+.list1 {
+    margin-left: 40px;
+}
+
+.text1 {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding-top: 20px;
+    font-family: inter;
+    font-weight: 20;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+
+
+}
+
+.text1:hover, text1:focus, .text1:active{
+    opacity: .70;
+}
+
+.menu-profile {
+    margin-top: 39px;
+}
+.menu-profile.active {
+    display: block;
+
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    padding-right: 0%;
+    padding-top: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.icon.none {
+    display: none;
+
+}
+
+.box-profile {
+    width: 80px;
+    height: 115px;
+    text-align: center;
+    margin-top: -23px;
+    background-color: white;
+    display: none;
+}
+
+.box-profile.active {
+    display: block;
+}
+
+
+.profile {
+    font-family: inter;
+    font-size: 15px;
+    font-weight: 700px;
+    font-style: normal;
+}
+
+.profile-line {
+    width: 40px;
+    height: 1px;
+    background: #bb945f;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.profile-text {
+    width: 59px;
+    height: 50px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.login {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.register {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
 .text {
     display: flex;
     flex-wrap: wrap;
@@ -68,8 +154,9 @@ html, body{
     color: white;
     margin-left: 20px;
     padding-top: 10px;
-    font-style: forum;
+    font-style: normal;
     font-size: 20px;
+    font-family: forum;
 }
 
 .welcome {
@@ -92,11 +179,14 @@ html, body{
 .subject {
     color: white;
     font-style: forum;
+    font-style: normal;
+    font-weight: 100;
     font-size: 30px;
     letter-spacing: 3px;
     text-align: center;
     width: 520px;
     height: 150px;
+    
 }
 
 /*about*/
@@ -109,6 +199,7 @@ html, body{
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
+    overflow: hidden;
 }
 
 #box1 {
@@ -122,10 +213,11 @@ html, body{
 
 .title {
     text-align: center;
-    font-style: fotum;
+    font-style: normal;
     width: 106px;
     height: 40px;
     font-size: 20px;
+    font-family: forum;
     
 }
 
@@ -146,47 +238,67 @@ html, body{
     font-size: 20px;
     margin-top: 130px;
     margin-left: 300px;
+    font-style: normal;
+
 
 }
 
-.images {
-    display: flex;
-    width: 1400px;
+.slider {
+    width: 1440px;
     height: 560px;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-top: 20px;
+    position: relative;
+    margin-left: 15px;
+
 }
 
-.circle-box {
+.slider-images {
+   width: 450px;
+   height: 560px;
+
+
+}
+
+.slider-line {
     display: flex;
+    transition: all 1s;
+    position: relative;
+    justify-content: space-between;
+
+}
+
+.slider-img {
+    width: 450px;
+    height: 560px;
+    margin-right: 25px;
+
+}
+
+.slider-buttons {
     width: 68px;
     height: 16px;
-    margin-left: 670px;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
     justify-content: space-between;
-    margin-top: 20px;
-
 }
 
-.circle1 {
+.slider-button1 {
     width: 16px;
     height: 16px;
     border-radius: 50%;
+    background-color: black;
+
+}
+
+.slider-button1:hover {
     background-color: #bb945f;
+    cursor: pointer;
 }
 
-.circle2 {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #0c0c0e;
-}
-
-.circle3 {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: #0c0c0e;
+.slider-button1.active {
+    background-color: #bb945f;
 }
 
 /* favorites */
@@ -198,6 +310,7 @@ html, body{
     display: flex;
     flex-wrap: wrap;
     position: relative;
+
 }
 
 #box2 {
@@ -215,6 +328,8 @@ html, body{
     width: 160px;
     height: 40px;
     font-size: 20px;
+    font-style: normal;
+
     
 }
 
@@ -239,16 +354,16 @@ html, body{
 
 }
 
-.seasons-wrapper {
+.seasons-wrapper-tab {
     width: 700px;
     height: 24px;
     background-color: white;
-    margin-top: 230px;
-    position: absolute;
-    margin-left: 20px;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 20px;
 
 }
 
@@ -321,17 +436,36 @@ label {
     background-color: white;
 }
 
-.items-container {
+.items-tab {
     width: 1400px;
     height: 1150px;
     background-color: white;
-    margin-left: 20px;
-    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+    margin: auto;
+    display: none;
+
 }
+
+
+.items-tab.active {
+    display: flex;
+    animation-name: tab; 
+    animation-duration: 4s; 
+
+}
+
+@keyframes tab {
+    from {
+        opacity: 0.5;
+    }
+
+    to {opacity: 1;
+
+    }
+}
+
 
 .wrapper-first-book {
     width: 590px;
@@ -355,8 +489,11 @@ label {
     background-color: white;
     margin-left: 20px;
     text-align: center;
-    font-style: forum;
+    font-style: normal;
     font-size: 18px;
+    white-space: nowrap;
+    font-family: forum;
+
     
 }
 
@@ -529,15 +666,617 @@ label {
 
 }
 
-.own-button {
+.buy-button-winter {
     width: 75px;
     height: 30px;
-    border: 2px solid #bb945f;
+    border: 2px solid black;
     margin-left: 20px;
     text-align: center;
     cursor: pointer;
-    color: #bb945f;
     margin-top: 80px;
+    background-color: white;
+}
+
+/* containers */
+
+.subject-spring-book1 {
+    width: 150px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-spring-book1 {
+    width: 355px;
+    height: 160px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+#img-spring-book1 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/springbook1.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.buy-button-spring1 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 160px;
+
+}
+
+.subject-spring-book2 {
+    width: 457px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-spring-book2 {
+    width: 355px;
+    height: 200px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.buy-button-spring2 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 120px;
+
+}
+
+#img-spring-book2 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/springbook2.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.subject-spring-book3 {
+    width: 209px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-spring-book3 {
+    width: 355px;
+    height: 200px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.buy-button-spring3 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 120px;
+
+}
+
+#img-spring-book3 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/springbook3.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.subject-spring-book4 {
+    width: 129px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-spring-book4 {
+    width: 355px;
+    height: 280px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.buy-button-spring {
+    width: 75px;
+    height: 30px;
+    border: 2px solid black;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 40px;
+    background-color: white;
+}
+
+#img-spring-book4 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/springbook4.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.subject-summer-book1 {
+    width: 380px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+    white-space: nowrap;
+
+}
+
+.text-summer-book1 {
+    width: 355px;
+    height: 240px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.buy-button-summer1 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 90px;
+
+}
+
+#img-summer-book1 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/summerbook1.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.subject-summer-book2 {
+    width: 260px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-summer-book2 {
+    width: 355px;
+    height: 320px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.buy-button-summer2 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+#img-summer-book2 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/summerbook2.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.subject-summer-book3 {
+    width: 291px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-summer-book3 {
+    width: 355px;
+    height: 200px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.buy-button-summer3 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 130px;
+
+}
+
+#img-summer-book3 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/summerbook3.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+.subject-summer-book4 {
+    width: 254px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+    white-space: nowrap;
+
+}
+
+.text-summer-book4 {
+    width: 355px;
+    height: 320px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.buy-button-summer4 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+#img-summer-book4 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/summerbook4.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+
+.subject-autumn-book1 {
+    width: 223px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-autumn-book1 {
+    width: 355px;
+    height: 280px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+}
+
+.buy-button-autumn1 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 50px;
+
+}
+
+#img-autumn-book1 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/autumnbook1.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+
+.subject-autumn-book2 {
+    width: 146px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+    white-space: nowrap;
+
+}
+
+.text-autumn-book2 {
+    width: 355px;
+    height: 280px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+}
+
+.buy-button-autumn2 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 50px;
+
+}
+
+#img-autumn-book2 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/autumnbook2.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+
+.subject-autumn-book3 {
+    width: 280px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+    white-space: nowrap;
+
+}
+
+.text-autumn-book3 {
+    width: 355px;
+    height: 280px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+}
+
+.buy-button-autumn3 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 40px;
+
+}
+
+#img-autumn-book3 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/autumnbook3.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
+}
+
+
+.subject-autumn-book4 {
+    width: 249px;
+    height: 80px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    margin-left: 20px;
+    line-height: 40px;
+
+}
+
+.text-autumn-book4 {
+    width: 355px;
+    height: 240px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+}
+
+.buy-button-autumn4 {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 80px;
+
+}
+
+#img-autumn-book4 {
+    width: 200px;
+    height: 300px;
+    background: url("./assets/autumnbook4.jpg");
+    position: absolute;
+    left: 390px;
+    top: 257px;
+
 }
 
 /* coffe shop */
@@ -572,6 +1311,7 @@ label {
     width: 220px;
     height: 40px;
     margin-top: 5px;
+    white-space: nowrap;
 }
 
 .line4 {
@@ -621,6 +1361,8 @@ label {
     font-size: 30px;
     color: #bb945f;
     letter-spacing: 2px;
+    font-style: normal;
+
 
 }
 
@@ -652,6 +1394,9 @@ label {
     font-weight: 400;
     letter-spacing: 2px;
     margin-top: 10px;
+    white-space: nowrap;
+    font-style: normal;
+
 
 }
 
@@ -669,6 +1414,8 @@ label {
     font-family: forum;
     font-size: 20px;
     margin-top: 10px;
+    font-style: normal;
+
 
 }
 
@@ -707,6 +1454,9 @@ label {
     font-weight: 400;
     letter-spacing: 2px;
     margin-top: 10px;
+    white-space: nowrap;
+    font-style: normal;
+
 
 }
 
@@ -725,6 +1475,8 @@ label {
     font-size: 20px;
     margin-top: 10px;
     margin-right: 7px;
+    font-style: normal;
+
 
 }
 
@@ -792,6 +1544,9 @@ label {
     font-weight: 700;
     letter-spacing: 2px;
     text-align: center;
+    white-space: nowrap;
+    font-style: normal;
+
 }
 
 .phone-info {
@@ -806,6 +1561,8 @@ label {
     font-size: 20px;
     letter-spacing: 2px;
     color: #000;
+    font-style: normal;
+
 }
 
 .text-phone1 {
@@ -815,6 +1572,8 @@ label {
     font-size: 20px;
     letter-spacing: 2px;
     color: #000;
+    font-style: normal;
+
 }
 
 .text-phone2 {
@@ -823,6 +1582,9 @@ label {
     font-size: 20px;
     letter-spacing: 2px;
     font-family: inter;
+    white-space: nowrap;
+    font-style: normal;
+
 }
 
 .senior-staff {
@@ -837,6 +1599,9 @@ label {
     letter-spacing: 2px;
     font-family: inter;
     font-weight: 700;
+    white-space: nowrap;
+    font-style: normal;
+
 }
 
 .name-staff1 {
@@ -845,6 +1610,9 @@ label {
     font-size: 20px;
     letter-spacing: 2px;
     font-family: inter;
+    white-space: nowrap;
+    font-style: normal;
+
 
 }
 
@@ -923,6 +1691,9 @@ label {
     font-weight: 700;
     margin-top: 0px;
     padding-top: 0px;
+    white-space: nowrap;
+    font-style: normal;
+
 
 }
 
@@ -949,9 +1720,11 @@ label {
 .text-card2 {
     width: 294px;
     height: 50px;
-    font-family: forun;
+    font-family: forum;
     font-size: 20px;
     text-align: center;
+    font-style: normal;
+
     
 }
 
@@ -966,6 +1739,8 @@ label {
     font-size: 30px;
     padding-left: 10px;
     margin-left: 20px;
+    font-style: normal;
+
 }
 
 
@@ -980,6 +1755,8 @@ label {
     font-family: Forum;
     font-size: 30px;
     padding-left: 10px;
+    font-style: normal;
+
 
 }
 
@@ -995,6 +1772,8 @@ label {
     letter-spacing: 1px;
     font-weight: 700;
     background-color: white;
+    font-style: normal;
+
 }
 
 
@@ -1009,19 +1788,23 @@ label {
     height: 30px;
     font-family: forum;
     font-size: 25px;
-    letter-spacing: 2px;
     margin-top: 5px;
     text-align: right;
     margin-left: 235px;
+    line-height: 40px;
+    font-style: normal;
+
 }
 
 .text-card {
     width: 456px;
     height: 120px;
     font-family: inter;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 2px;
     text-align: right;
+    font-style: normal;
+
 }
 
 .button-card {
@@ -1079,6 +1862,8 @@ label {
     font-family: Inter;
     font-size: 15px;
     letter-spacing: 1px;
+    font-style: normal;
+
 
 }
 
@@ -1095,6 +1880,8 @@ label {
     font-size: 15px;
     color: white;
     text-align: right;
+    font-style: normal;
+
 
 }
 
@@ -1149,6 +1936,8 @@ label {
     font-weight: 500;
     font-size: 20px;
     color: white;
+    font-style: normal;
+
 }
 
 .rsschool {
@@ -1159,6 +1948,9 @@ label {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 2px;
+    white-space: nowrap;
+    font-style: normal;
+
 }
 
 .link2 {
@@ -1174,4 +1966,750 @@ label {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 2px;
+    font-style: normal;
+}
+
+/* modal register*/
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.overlay {
+    opacity: 0.8;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+
+}
+
+
+.modal-register {
+    position: relative;
+    width: 250px;
+    height: 382px;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 2;
+
+}
+
+
+.register-text {
+    text-align: center;
+    font-size: 20px;
+    font-family: forum;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 5px;
+    font-style: normal;
+}
+
+.button-close {
+    width: 20px;
+    height: 20px;
+    color: #0C0C0E;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+
+}
+
+
+.form-register {
+    width: 200px;
+    height: 270px;
+    padding: 0px 25px 0px 25px;
+
+
+}
+input {
+    outline: none;
+    width: 190px;
+    height: 20px;
+    border: 1px solid #BB945F;
+    margin: 5px 0px 5px 0px;
+
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:not(:focus):invalid {
+    border: 1px solid #BB945F;
+
+}
+
+label {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.button-register {
+    width: 75px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+}
+
+
+.button-register p {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+.register-text1 {
+    width: 164px;
+    height: 12px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.question {
+    color: #000;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.register-login {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+/*modal login*/
+
+.modal1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal1.active {
+    display: flex;
+}
+
+.overlay1 {
+    opacity: 0.8;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+
+}
+
+
+.modal-login {
+    position: relative;
+    width: 250px;
+    height: 262px;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 2;
+
+}
+
+
+.login-text {
+    text-align: center;
+    font-size: 20px;
+    font-family: forum;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 5px;
+    font-style: normal;
+}
+
+.button-close1 {
+    width: 20px;
+    height: 20px;
+    color: #0C0C0E;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+
+.form-login {
+    width: 200px;
+    height: 160px;
+    padding: 0px 25px 0px 25px;
+
+
+}
+input {
+    outline: none;
+    width: 190px;
+    height: 20px;
+    border: 1px solid #BB945F;
+    margin: 6px 0px 5px 0px;
+
+}
+
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:not(:focus):invalid {
+    border: 1px solid #BB945F;
+
+}
+
+label {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.button-login {
+    width: 75px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+}
+
+
+.button-login p {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+.login-text1 {
+    width: 164px;
+    height: 12px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.question1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.register-login1 {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+/*modal buy a library card*/
+.modal2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal2.active {
+    display: flex;
+}
+
+.overlay2 {
+    opacity: 0.4;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+
+}
+
+.modal-card {
+    width: 640px;
+    height: 540px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid black;
+    z-index: 2;
+
+}
+
+.modal-title {
+    width: 640px;
+    height: 60px;
+    background-color: black;
+    padding: 5px 0px 5px 0px;
+}
+
+.button-close2 {
+    width: 15px;
+    height: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.modal-text {
+    text-align: center;
+    font-size: 40px;
+    font-family: Forum;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: -40px;
+    color: white;
+    font-style: normal;
+}
+
+.modal-form {
+    width: 200px;
+    height: 450px;
+    background-color: white;
+    margin-left: 40px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+
+.modal-text1 {
+    margin-right: 40px;
+    margin-top: 20px;
+    color: #8E8E8E;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+    
+}
+
+.form-card {
+    width: 200px;
+    height: 170px;
+    background-color: white;
+    padding-top: 10px;
+}
+
+.form-card1 {
+    width: 200px;
+    height: 170px;
+    background-color: white;
+    padding-top: 10px;
+}
+
+#month {
+    width: 45px;
+    height: 20px;
+    background-color: white;
+
+}
+
+#year {
+    width: 45px;
+    height: 20px;
+    background-color: white;
+}
+
+.input4 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 85px;
+}
+
+#cvc {
+    width: 45px;
+    height: 20px;
+}
+
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:not(:focus):invalid {
+    border: 1px solid #BB945F;
+
+}
+
+.buycard {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+}
+
+.button-buy {
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.price {
+    color: #0C0C0E;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap ;
+    margin-right: 70px;
+}
+
+/*icon auth*/
+.auth-profile.none {
+    display: none;
+}
+
+.icon-auth {
+    width: 28px;
+    height: 28px;
+    margin-right: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    background-color: white;
+    text-align: center;
+}
+
+.icon-auth.active {
+    display: flex;
+
+}
+
+.box-profile1 {
+    width: 80px;
+    height: 115px;
+    text-align: center;
+    margin-top: -20px;
+    background-color: white;
+    display: none;
+}
+
+.box-profile1.active {
+    display: block;
+}
+
+.profile1 {
+    font-family: inter;
+    font-size: 15px;
+    font-weight: 700px;
+    font-style: normal;
+}
+
+.profile-line1 {
+    width: 40px;
+    height: 1px;
+    background: #bb945f;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.profile-text1 {
+    width: 59px;
+    height: 50px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.myprofile {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-left: -4px;
+
+}
+
+.logout {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.iniciali {
+    color: #BB945F;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 4px;
+    letter-spacing: 2px;
+}
+
+.container-librarycard1 {
+    display: none;
+}
+
+/*modal profile*/
+
+.modal4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal4.active {
+    display: flex;
+}
+
+.overlay4 {
+    opacity: 0.6;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+
+}
+
+.modal-profile {
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    z-index: 2;
+}
+
+.button-close3 {
+    width: 15px;
+    height: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    margin-right: -5px;
+    margin-top: 20px;
+}
+
+.box-name {
+    width: 170px;
+    height: 400px;
+    position: relative;
+    background-color: black;
+
+}
+
+.box-inic {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    margin: 139px 45px 184px 45px;
+
+}
+
+.box-inic h4 {
+    margin-top: 30px;
+    color: #BB945F;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.box-name3 {
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 25px;
+}
+
+.box-name3 h4 {
+    margin-top: 5px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.box-info {
+    position: relative;
+}
+
+.myprofile1 {
+    color: #000;
+    text-align: center;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: -120px;
+    margin-top: 27px;
+}
+
+.cardsprofile  {
+    display: flex;
+    margin-left: -105px;
+    margin-top: 10px;
+    justify-content: center;
+    grid-gap: 40px;
+}
+
+.text7 {
+    margin-left: -10px;
+}
+
+.img1 {
+    margin-top: -10px;
+}
+
+.number1 {
+    margin-top: 10px;
+}
+
+
+
+.rentedbooks {
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+.rentedbooks h3 {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: -200px;
+}
+
+.books2 {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.cardnumber {
+    display: flex;
+    justify-content: center;
+    margin-left: -70px;
+    grid-gap: 20px;
+}
+
+.carnumber1 {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.number {
+    color: #BB945F;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
 }
